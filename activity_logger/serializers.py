@@ -1,10 +1,10 @@
-from .models import UserData
+from .models import User
 from rest_framework import serializers
 
 
-class UserDataSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.HyperlinkedModelSerializer):
     activity = serializers.StringRelatedField(many=True, read_only=True)
 
     class Meta:
-        model = UserData
+        model = User
         fields = ['name', 'place', 'activity']
