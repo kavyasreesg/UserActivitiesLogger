@@ -1,5 +1,5 @@
 # UserActivitiesLogger<br />
-This project implements an django application with User and ActivityPeriod models with custom management command to populate the database with some dummy data and design<br />
+This project implements an django application with User and ActivityPeriod models with custom management command to populate the database with some dummy data and design 
 an API to serve that data in the json format using Django and Django Rest Framework.<br />
 <br />
 Detailed flow of the application:<br />
