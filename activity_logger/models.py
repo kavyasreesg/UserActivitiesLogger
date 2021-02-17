@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class User(models.Model):
+class UserData(models.Model):
     name = models.CharField(max_length=100)
     place = models.CharField(max_length=200)
 
@@ -9,8 +9,8 @@ class User(models.Model):
         return self.name
 
 
-class ActivityPeriod(models.Model):
-    activity = models.ForeignKey(User, related_name='activity', on_delete=models.CASCADE, null=True)
+class ActivityData(models.Model):
+    activity = models.ForeignKey(UserData, related_name='activity', on_delete=models.CASCADE, null=True)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     dictionary = {}

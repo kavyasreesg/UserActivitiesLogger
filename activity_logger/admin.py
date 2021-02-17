@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import User
-from .models import ActivityPeriod
+from .models import UserData
+from .models import ActivityData
 
 
-admin.site.register(User)
-admin.site.register(ActivityPeriod)
+admin.site.register(UserData)
+admin.site.register(ActivityData)
